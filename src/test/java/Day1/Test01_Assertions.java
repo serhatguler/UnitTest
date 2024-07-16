@@ -24,6 +24,26 @@ public class Test01_Assertions {
 
     }
 
+    //Baska ornek
+    @Test
+    public void testUpperCase(){
+        String anlikDeger = "Merhaba".toUpperCase();
+        String beklenenDeger = "Merhaba";
+        //assertEquals(beklenenDeger,anlikDeger);
+        //hata aninda kullaniciya mesaj gondermek istiyorsam
+        assertEquals(beklenenDeger,anlikDeger,"Upeprcase() duzgun calismiyor");
+
+    }
+    @Test
+    public void testToplama(){//MAth.addExact()
+        int sayi1 = 10;
+        int sayi2 = 5;
+        int anlikDeger = Math.addExact(sayi1,sayi2);
+        int beklenenDeger =15;
+        assertEquals(beklenenDeger,anlikDeger);
+
+    }
+
 
 
 
